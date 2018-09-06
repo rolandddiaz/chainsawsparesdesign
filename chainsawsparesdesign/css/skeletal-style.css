@@ -459,3 +459,36 @@ fieldset[disabled] .btn-info.active {
 .logo {
 	max-width:100%;
 }
+
+#compat_list {
+            margin-bottom: 15px;
+        }
+        .product-finder-label {
+            display: inline-block;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        #compat_list .compatibility_list {
+            display: inline-block;
+            margin-left: 21px;
+        }
+        @media (min-width: 1200px) {
+            #compat_list .compatibility_list {
+                width: 308px;
+            }
+        }
+        @media (max-width: 1199px) and (min-width: 992px) {
+            #compat_list .compatibility_list {
+                width: 247px;
+            }
+        }
+        @media (max-width: 991px) and (min-width: 768px) {
+            #compat_list .compatibility_list {
+                width: 173px;
+            }
+        }
+        @media (max-width: 767px) {
+            #compat_list .compatibility_list {
+                margin: 0 0 15px 0;
+            }
+        }

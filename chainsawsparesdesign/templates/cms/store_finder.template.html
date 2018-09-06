@@ -1,3 +1,69 @@
+<!--This is the New Product Finder Functionalities --> 
+<div class="row">
+            <div class="col-xs-12">
+                [%list type:'content' filter:'content_type=category&content_level=1' sort:'sortorder,content_name' limit:'999'%]
+                    [%param *header%]
+                        [%site_value id:'footer_javascript'%]
+                            <script>
+                                $(document).ready(function(){
+                                    $.compatListInit({});
+                                    $(".compatibility_list").change(function() {
+                                        $.buildCompatList($(this));
+                                    });
+                                });
+                            </script>
+                        [%/site_value%]                
+                        <div id="compat_list" class="n-wrapper-form-control">
+                            <p class="product-finder-label">Product Finder</p>
+                            <select name="clist" id="clist" class="compatibility_list form-control">
+                                <option value="">Choose Option</option>
+                    [%/param%]
+                    [%param *body%]
+                        <option value="[@content_id@]">[@content_name@]</option>
+                    [%/param%]
+                    [%param *footer%]
+                            </select>
+                        </div>
+                    [%/param%]
+                [%/list%]
+            </div>
+        </div>
+
+    Note You will want the filter:'content_type=category' to reflect the content type of your choice. 3) In the style.css file copy and paste the below CSS. The file is located in /httpdocs/assets/themes/[THEME-NAME]/css/style.css
+#compat_list {
+            margin-bottom: 15px;
+        }
+        .product-finder-label {
+            display: inline-block;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        #compat_list .compatibility_list {
+            display: inline-block;
+            margin-left: 21px;
+        }
+        @media (min-width: 1200px) {
+            #compat_list .compatibility_list {
+                width: 308px;
+            }
+        }
+        @media (max-width: 1199px) and (min-width: 992px) {
+            #compat_list .compatibility_list {
+                width: 247px;
+            }
+        }
+        @media (max-width: 991px) and (min-width: 768px) {
+            #compat_list .compatibility_list {
+                width: 173px;
+            }
+        }
+        @media (max-width: 767px) {
+            #compat_list .compatibility_list {
+                margin: 0 0 15px 0;
+            }
+        }
+<!-- This is the end of Product Finder Functionalities -->
+
 <div  class="container" >
 <div class="row">
 
