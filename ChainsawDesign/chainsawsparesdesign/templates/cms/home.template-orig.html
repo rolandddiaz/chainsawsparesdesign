@@ -1,0 +1,534 @@
+<div  class="container" style="background-color:#e0ecff; ">
+<div class="row">
+    
+<div id="navcat1" class="col-xs-12 col-sm-3 hidden-xs" style="background-color:#e0ecff; ">
+  [%load_template file:'cms/includes/navcat1.template.html'/%]
+</div>
+
+<div id="navcat2"  class="col-xs-12 col-sm-9" style="background-color:#e0ecff; ">
+[%load_template file:'cms/includes/navcat2.template.html'/%]
+</div>
+
+<div class="row">
+
+<div id="navcat3"  class="col-xs-12 col-sm-9" style="background-color:#e0ecff; ">
+[%load_template file:'cms/includes/navcat3.template.html'/%]
+</div>
+
+<div id="navcat4"  class="col-xs-12 col-sm-3 hidden-xs">
+[%load_template file:'cms/includes/navcat4.template.html'/%]
+</div>
+
+<div id="navcat5"  class="col-xs-12 col-sm-12">
+[%load_template file:'cms/includes/navcat5.template.html'/%]
+</div>
+
+</div>
+</div>
+
+
+</div>
+</div>        
+</div>
+
+
+<div class="container">
+<div class="row">
+
+<div class="col-sm-3 hidden-xs">
+      <center><p style="color:black; font-weight: bold;">Safety Equipment</p></center>
+      <p><a href="http://www.chainsawspares.com.au/ebay_store_3/safety-equipment/"><img src="http://images.jonoandjohno.com.au/home/safety-equipment.png" class="img-thumbnail" alt="Safety Equipment" width="304" height="236"></a></p>
+      <p><a href="http://www.chainsawspares.com.au/ebay_store_3/safety-equipment/" class="btn-primary btn btn-block btn-loads" role="button">Explore</a></p>
+</div>
+
+  <!-- This is the Home Page Tab codes start -->
+<div class="col-sm-9 hidden-xs" >
+
+<ul class="nav nav-tabs">
+    <li class="active"><a data-toggle="tab" href="#menu1" style="color:red; font-weight: bold;" >New Arrivals</a></li>
+    <li><a data-toggle="tab" href="#menu2" style="color:black; font-weight: bold;">Popular Products</a></li>
+    <li><a data-toggle="tab" href="#menu3" style="color:black; font-weight: bold;">Featured Products</a></li>
+    <li><a data-toggle="tab" href="#menu4" style="color:black; font-weight: bold;">Latest Advertisement</a></li>
+    <li><a data-toggle="tab" href="#menu5" style="color:black; font-weight: bold;">Shipping Information</a></li>
+</ul>
+
+<div class="tab-content">
+<div class="tab-pane fade in active" id="menu1">
+<p>
+<center>
+        [%thumb_list type:'products' template:'' sortby:'new_arrivals' filter_category:'0' limit:'4'%]
+        [%param *header%]
+      
+        <div class="row">
+        [%/param%]
+        [%param *footer%]
+        </div>
+        [%/param%]
+        [%/thumb_list%]
+    </center>
+</p>
+</div>
+
+<div class="tab-pane fade" id="menu2">
+<p>
+    <center>
+        [%thumb_list type:'products' template:'' sortby:'popular' filter_category:'0' limit:'4'%]
+        [%param *header%]
+ 
+        <div class="row">
+        [%/param%]
+        [%param *footer%]
+          </div>
+        [%/param%]
+        [%/thumb_list%]
+        </center>
+    </p>
+</div>
+
+<div class="tab-pane fade" id="menu3">
+<p>
+<center>
+ 
+    [%if [@config:show_home_ads@]%]
+    [%advert type:'product' limit:'8' template:'' ad_group:'featured'%]
+    [%param *header%]
+
+    <div class="row">
+    [%/param%]
+    [%param footer%]
+    </div>
+
+    [%/param%]
+    [%param *ifempty%]
+    [%random_products category:'0' template:'' limit:'8'%]
+    [%param *header%]
+    <div class="row">
+
+    [%/param%]
+    [%param *footer%]
+    </div>
+
+    [%/param%]
+    [%/random_products%]
+    [%/param%]
+    [%/advert%]
+    [%/if%]
+</center>
+</p>
+</div>
+
+<div class="tab-pane fade" id="menu4">
+<p>
+<center>
+
+    [%advert type:'text' template:'text' limit:'10' ad_group:'ad_units'%]
+    [%param *header%]
+    <div class="row">
+    [%/param%]
+    [%param *footer%]
+    </div>
+    [%/param%]
+    [%/advert%]
+</center>
+</p>
+</div>
+
+<div class="tab-pane fade" id="menu5">
+
+<p>
+<center>
+<h4 style="text-align: justify;"><span style="color:#000000;"><span style="font-size: 13px; line-height: 1.6em;">Please refer to the postage chart for an estimated delivery time for your state.</span></span></h4>
+
+<h4 style="text-align: justify;"><span style="color:#000000;">We post your goods as quickly as we can. 99% of all purchases are freighted out of our warehouse within 24 hours.<br />
+<br />
+Most larger items are sent with e-Parcel. e-Parcel is an Australia Post parcel delivery service that requires a signature on delivery. If no-one is home at time of delivery then a card will be left in your letter-box requesting that you pick the parcel up from your local post office.<br />
+Many smaller items are sent in an envelope with stamps. These items are not tracked and will be left in your mail box.<br />
+<br />
+Please understand that we have no control over the Australia Post mail network.&nbsp;</span></h4>
+
+<h4 style="text-align: justify;">&nbsp;</h4>
+
+<h4 style="color:#000000;">TNT Freight Details</h4>
+
+<p><a href="http://www.chainsawspares.com.au/page/shipping-information/" class="btn btn-info" role="button">READ MORE...</a></p>
+
+</tbody>
+</table>
+
+</div>
+</div>
+
+</center>
+</p>
+
+</div>
+
+</div>
+</div>
+<!-- This is the Home Page Tab codes end -->
+
+<!-- This is the End of Content Zone -->
+
+<!-- This is the Home Page Tab codes start -->
+
+
+<div class="col-sm-3 hidden-xs">
+      <center><p style="color:black; font-weight: bold;">Generators</p></center>
+      <p><a href="http://www.chainsawspares.com.au/ebay_store_3/generators/"><img src="http://images.jonoandjohno.com.au/home/generators.png" class="img-thumbnail" alt="Generators" width="304" height="236"></a></p>
+      <p><a href="http://www.chainsawspares.com.au/ebay_store_3/safety-equipment/" class="btn-primary btn btn-block btn-loads" role="button">Explore</a></p>
+
+      <center><p style="color:black; font-weight: bold;">Staionary Engines</p></center>
+      <p><a href="http://www.chainsawspares.com.au/ebay_store_3/stationary-engines/"><img src="http://images.jonoandjohno.com.au/home/stationary-engine.png" class="img-thumbnail" alt="Staionary Engines" width="304" height="236"></a></p>
+      <p><a href="http://www.chainsawspares.com.au/ebay_store_3/safety-equipment/" class="btn-primary btn btn-block btn-loads" role="button">Explore</a></p>
+</div>
+
+
+    <div class="col-sm-9">
+       <!-- This is the Home Page Code Start -->
+    <div id="homepage-content" class="n-responsive-content hidden-xs">[@page_content@]</div>
+    [%if [@config:show_home_ads@]%]
+        [%advert type:'product' limit:'8' template:'' ad_group:''%]
+            [%param *header%]
+                <hr />
+                <div class="row hidden-xs">
+            [%/param%]
+            [%param footer%]
+                </div>
+            [%/param%]
+            [%param *ifempty%]
+                [%random_products category:'0' template:'' limit:'8'%]
+                    [%param *header%]
+                        <hr />
+                        <div class="row hidden-xs">
+                    [%/param%]
+                    [%param *footer%]
+                        </div>
+                    [%/param%]
+                [%/random_products%]
+            [%/param%]
+        [%/advert%]
+    [%/if%]
+<!-- This is the Home Page Code End -->
+</div>
+
+
+<!--This is a sidebar 1 Carousel start codes -->
+</div>
+
+
+</div>
+</div>
+<!-- This is the End of Content Zone -->
+
+<!-- This is the start of Content Zone --> 
+
+<div class="container hidden-xs">
+  <div class="row">
+   
+  <!--<div class="col-sm-6">
+      <h3">Chainsaw Accessories & Tools</h3>
+      <p>[%content_zone id:'chainsaw'%][%end content_zone%]</p>
+    </div> -->
+
+  <!--  <div class="col-sm-6">
+       <h3">Chainsaw Accessories & Tools</h3>
+      <p>[%content_zone id:'nylon'%][%end content_zone%]</p>
+    </div> -->
+
+</div>
+</div>
+<!-- This is the End of Content Zone -->
+
+<!-- This is the start of home page category listings --> 
+<div class="container">
+  <div class="row">
+    <center>
+    <div class="col-xs-6 col-sm-3 col-lg-3">
+      <p style="color:black; font-weight: bold;">Automotive</p> 
+      <p><a href="http://www.chainsawspares.com.au/ebay_store_3/automotive/"><img src="http://images.jonoandjohno.com.au/home/automotive.png" class="img-thumbnail" alt="Automotive" width="304" height="236"></a></p>
+      <p><a href="http://www.chainsawspares.com.au/ebay_store_3/automotive/" class="btn-primary btn btn-block btn-loads" role="button">Explore</a></p>
+    </div>
+    </center>
+    <center>
+    <div class="col-xs-6 col-sm-3 col-lg-3">
+      <p style="color:black; font-weight: bold;">Boat Winches</p> 
+      <p><a href="http://www.chainsawspares.com.au/ebay_store_3/boat-winches/"><img src="http://images.jonoandjohno.com.au/home/boat-winches.png" class="img-thumbnail" alt="Boot Winches" width="304" height="236"></a></p>
+      <p><a href="http://www.chainsawspares.com.au/ebay_store_3/boat-winches/" class="btn-primary btn btn-block btn-loads" role="button">Explore</a></p>
+    </div>
+    </center>
+    <center>
+    <div class="col-xs-6 col-sm-3 col-lg-3">
+      <p style="color:black; font-weight: bold;">Boots</p> 
+      <p><a href="http://www.chainsawspares.com.au/ebay_store_3/boat-winches/"><img src="http://images.jonoandjohno.com.au/home/boots.png" class="img-thumbnail" alt="Boots" width="304" height="236"></a></p>
+      <p><a href="http://www.chainsawspares.com.au/ebay_store_3/boots/" class="btn-primary btn btn-block btn-loads" role="button">Explore</a></p>
+    </div>
+    </center>
+    <center>
+    <div class="col-xs-6 col-sm-3 col-lg-3">
+      <p style="color:black; font-weight: bold;">Camping/Fishing/Hunting</p> 
+      <p><a href="http://www.chainsawspares.com.au/camping-fishing-hunting/"><img src="http://images.jonoandjohno.com.au/home/camping.png" class="img-thumbnail" alt="Camping/Fishing/Hunting" width="304" height="236"></a></p>
+      <p><a href="http://www.chainsawspares.com.au/camping-fishing-hunting/" class="btn-primary btn btn-block btn-loads" role="button">Explore</a></p>
+    </div>
+    </center>
+</div>
+
+<div class="row">
+    <center>    
+    <div class="col-xs-6 col-sm-3 col-lg-3">
+      <p style="color:black; font-weight: bold;">Chainsaw Equipment</p> 
+      <p><a href="http://www.chainsawspares.com.au/ebay_store_3/chainsaw-equipment/"><img src="http://images.jonoandjohno.com.au/home/chainsaw-equipment.png" class="img-thumbnail" alt="Chainsaw Equipment" width="304" height="236"></a></p>
+      <p><a href="http://www.chainsawspares.com.au/ebay_store_3/chainsaw-equipment/" class="btn-primary btn btn-block btn-loads" role="button">Explore</a></p>
+    </div>
+    </center>
+    <center>
+    <div class="col-xs-6 col-sm-3 col-lg-3">
+      <p style="color:black; font-weight: bold;">Chainsaws</p> 
+      <p><a href="http://www.chainsawspares.com.au/ebay_store_3/chainsaws/"><img src="http://images.jonoandjohno.com.au/home/chainsaws.png" class="img-thumbnail" alt="Chainsaws" width="304" height="236"></a></p>
+      <p><a href="http://www.chainsawspares.com.au/ebay_store_3/chainsaws/" class="btn-primary btn btn-block btn-loads" role="button">Explore</a></p>
+    </div>
+    </center>
+    <center>
+    <div class="col-xs-6 col-sm-3 col-lg-3">
+      <p style="color:black; font-weight: bold;">Fencing Equipment</p> 
+      <p><a href="http://www.chainsawspares.com.au/ebay_store_3/fencing-equipment/"><img src="http://images.jonoandjohno.com.au/home/fencing1.png" class="img-thumbnail" alt="Fencing Equipment" width="304" height="236"></a></p>
+      <p><a href="http://www.chainsawspares.com.au/ebay_store_3/fencing-equipment/" class="btn-primary btn btn-block btn-loads" role="button">Explore</a></p>
+    </div>
+    </center>
+    <center>
+    <div class="col-xs-6 col-sm-3 col-lg-3">
+      <p style="color:black; font-weight: bold;">Generators</p> 
+      <p><a href="http://www.chainsawspares.com.au/ebay_store_3/generators/"><img src="http://images.jonoandjohno.com.au/home/generators.png" class="img-thumbnail" alt="Generators" width="304" height="236"></a></p>
+      <p><a href="http://www.chainsawspares.com.au/ebay_store_3/generators/" class="btn-primary btn btn-block btn-loads" role="button">Explore</a></p>
+    </div>
+    </center>
+</div>
+
+<div class="row">
+    <center>
+    <div class="col-xs-6 col-sm-3 col-lg-3">
+      <p style="color:black; font-weight: bold;">Honda & Copy Engine Parts</p> 
+      <p><a href="http://www.chainsawspares.com.au/ebay_store_3/honda-copy-engine-parts/"><img src="http://images.jonoandjohno.com.au/home/honda-copy-engine.png" class="img-thumbnail" alt="Honda & Copy Engine Parts" width="304" height="236"></a></p>
+      <p><a href="http://www.chainsawspares.com.au/ebay_store_3/honda-copy-engine-parts/" class="btn-primary btn btn-block btn-loads" role="button">Explore</a></p>
+    </div>
+    </center>
+    <center>
+    <div class="col-xs-6 col-sm-3 col-lg-3">
+      <p style="color:black; font-weight: bold;">Lawn Mower</p> 
+      <p><a href="http://www.chainsawspares.com.au/ebay_store_3/lawn-mower/"><img src="http://images.jonoandjohno.com.au/home/lawn-mower.png" class="img-thumbnail" alt="Lawn Mower" width="304" height="236"></a></p>
+      <p><a href="http://www.chainsawspares.com.au/ebay_store_3/lawn-mower/" class="btn-primary btn btn-block btn-loads" role="button">Explore</a></p>
+    </div>
+    </center>
+    <center>
+    <div class="col-xs-6 col-sm-3 col-lg-3">
+      <p style="color:black; font-weight: bold;">Mower Equipment</p> 
+      <p><a href="http://www.chainsawspares.com.au/ebay_store_3/mower-equipment/"><img src="http://images.jonoandjohno.com.au/home/mower-equipment.png" class="img-thumbnail" alt="Mower Equipment" width="304" height="236"></a></p>
+      <p><a href="http://www.chainsawspares.com.au/ebay_store_3/mower-equipment/" class="btn-primary btn btn-block btn-loads" role="button">Explore</a></p>
+    </div>
+    </center>
+    <center>
+    <div class="col-xs-6 col-sm-3 col-lg-3">
+      <p style="color:black; font-weight: bold;">Other</p> 
+      <p><a href="http://www.chainsawspares.com.au/ebay_store_3/other/"><img src="http://images.jonoandjohno.com.au/home/other.png" class="img-thumbnail" alt="Other" width="304" height="236"></a></p>
+      <p><a href="http://www.chainsawspares.com.au/ebay_store_3/other/" class="btn-primary btn btn-block btn-loads" role="button">Explore</a></p>
+    </div>
+    </center>
+</div>
+
+<div class="row">
+    <center>
+    <div class="col-xs-6 col-sm-3 col-lg-3">
+      <p style="color:black; font-weight: bold;">Post Hole Diggers</p> 
+      <p><a href="http://www.chainsawspares.com.au/ebay_store_3/post-hole-diggers/"><img src="http://images.jonoandjohno.com.au/home/post-hole-digger.png" class="img-thumbnail" alt="Post Hole Diggers" width="304" height="236"></a></p>
+      <p><a href="http://www.chainsawspares.com.au/ebay_store_3/post-hole-diggers/" class="btn-primary btn btn-block btn-loads" role="button">Explore</a></p>
+    </div>
+    </center>
+    <center>
+    <div class="col-xs-6 col-sm-3 col-lg-3">
+      <p style="color:black; font-weight: bold;">Power Tools</p> 
+      <p><a href="http://www.chainsawspares.com.au/ebay_store_3/power-tools/"><img src="http://images.jonoandjohno.com.au/home/power-tools.png" class="img-thumbnail" alt="Power Tools" width="304" height="236"></a></p>
+      <p><a href="http://www.chainsawspares.com.au/ebay_store_3/power-tools/" class="btn-primary btn btn-block btn-loads" role="button">Explore</a></p>
+    </div>
+    </center>
+    <center>
+    <div class="col-xs-6 col-sm-3 col-lg-3">
+      <p style="color:black; font-weight: bold;">Safety Equipment</p> 
+      <p><a href="http://www.chainsawspares.com.au/ebay_store_3/safety-equipment/"><img src="http://images.jonoandjohno.com.au/home/safety-equipment.png" class="img-thumbnail" alt="Safety Equipment" width="304" height="236"></a></p>
+      <p><a href="http://www.chainsawspares.com.au/ebay_store_3/safety-equipment/" class="btn-primary btn btn-block btn-loads" role="button">Explore</a></p>
+    </div>
+    </center>
+    <center>
+    <div class="col-xs-6 col-sm-3 col-lg-3">
+      <p style="color:black; font-weight: bold;">Sand Blasting Equipment</p> 
+      <p><a href="http://www.chainsawspares.com.au/ebay_store_3/sandblasting-equipment/"><img src="http://images.jonoandjohno.com.au/home/sand-blasting.png" class="img-thumbnail" alt="Sand Blasting Equipment" width="304" height="236"></p>
+      <p><a href="http://www.chainsawspares.com.au/ebay_store_3/sandblasting-equipment/" class="btn-primary btn btn-block btn-loads" role="button">Explore</a></p>
+    </div>
+    </center>   
+ </div>
+
+<div class="row">
+    <center>
+    <div class="col-xs-6 col-sm-3 col-lg-3">
+      <p style="color:black; font-weight: bold;">Stationary Engines</p> 
+      <p><a href="http://www.chainsawspares.com.au/ebay_store_3/stationary-engines/"><img src="http://images.jonoandjohno.com.au/home/stationary-engine.png" class="img-thumbnail" alt="Stationary Engines" width="304" height="236"></a></p>
+      <p><a href="http://www.chainsawspares.com.au/ebay_store_3/stationary-engines/" class="btn-primary btn btn-block btn-loads" role="button">Explore</a></p>
+    </div>
+    </center>
+
+    <center>
+    <div class="col-xs-6 col-sm-3 col-lg-3">
+      <p style="color:black; font-weight: bold;">Power Tools</p> 
+      <p><a href="http://www.chainsawspares.com.au/ebay_store_3/tools/"><img src="http://images.jonoandjohno.com.au/home/tools.png" class="img-thumbnail" alt="Power Tools" width="304" height="236"></a></p>
+      <p><a href="http://www.chainsawspares.com.au/ebay_store_3/tools/" class="btn-primary btn btn-block btn-loads" role="button">Explore</a></p>
+    </div>
+    </center>
+    <center>
+    <div class="col-xs-6 col-sm-3 col-lg-3">
+      <p style="color:black; font-weight: bold;">Water Pumps, Hoses etc</p> 
+      <p><a href="http://www.chainsawspares.com.au/ebay_store_3/water-pumps-hoses-fittings/"><img src="http://images.jonoandjohno.com.au/home/water-pump.png" class="img-thumbnail" alt="Water Pumps, Hoses etc" width="304" height="236"></a></p>
+      <p><a href="http://www.chainsawspares.com.au/ebay_store_3/water-pumps-hoses-fittings/" class="btn-primary btn btn-block btn-loads" role="button">Explore</a></p>
+    </div>
+    </center>
+    <center>
+    <div class="col-xs-6 col-sm-3 col-lg-3">
+      <p style="color:black; font-weight: bold;">Water Troughs</p> 
+      <p><a href="http://www.chainsawspares.com.au/ebay_store_3/water-troughs/"><img src="http://images.jonoandjohno.com.au/home/water-throughs.png" class="img-thumbnail" alt="Water Troughs" width="304" height="236"></a></p>
+      <p><a href="http://www.chainsawspares.com.au/ebay_store_3/water-troughs/" class="btn-primary btn btn-block btn-loads" role="button">Explore</a></p>
+    </div>
+    </center>
+ </div>
+ 
+ <div class="row">   
+    <center>
+    <div class="col-xs-6 col-sm-3 col-lg-3">
+      <p style="color:black; font-weight: bold;">Weed Sprayers</p> 
+      <p><a href="http://www.chainsawspares.com.au/ebay_store_3/weed-sprayers/"><img src="http://images.jonoandjohno.com.au/home/weed-sprayers.png" class="img-thumbnail" alt="Weed Sprayers" width="304" height="236"></a></p>
+      <p><a href="http://www.chainsawspares.com.au/ebay_store_3/weed-sprayers/" class="btn-primary btn btn-block btn-loads" role="button">Explore</a></p>
+    </div>
+    </center>
+</div> 
+
+</div>
+</div>
+<!-- Home Categories Codeds Ends here -->
+<!-- This is the Testimonial Codes Start -->
+   <!-- <div class="row hidden-xs">
+    <div class="col-sm-12">
+    <center>
+        [%thumb_list type:'content' content_type:'testimonials' limit:'4'%]
+        [%param *header%]
+        <h3 style="color:black;">Testimonials</h3>
+        <div class="row">
+        [%/param%]
+        [%param *body%]
+        <div class="col-sm-4 testimonial">
+            <blockquote>
+                <p style="color:black;">[@content_description1@]</p>
+                <footer style="color:black;">[@content_short_description1@] <img src="[%asset_url type:'content' id:'[@content_id@]' /%]"></footer>
+            </blockquote>
+        </div>
+    [%/param%]
+    [%param *footer%]
+        </div>
+    [%/param%]
+    [%/thumb_list%]
+    </center>
+    </div>
+    </div>
+    -->
+<!-- This is the Testimonial Codes Ends -->
+
+<!-- This is the Blog Codes Start -->
+   <!-- <div class="row">
+    <div class="col-sm-12 hidden-xs" style="background-color:#e6e6e6;">
+    <center>
+    [%thumb_list type:'content' content_type:'blog' template:'blog' show_next_level:'1' limit:'3' sortby:'date_posted-desc'%]
+    [%param *header%]
+    <h2 style="color:#000000; class="text-center" >Our Blog</h2>
+    <div class="row blog-thumbs">
+    [%/param%]
+    [%param *footer%]
+    </div>
+    [%/param%]
+    [%/thumb_list%]
+    </center>
+    </div>
+    </div> 
+    -->
+    <!-- This is the Blog Codes Ends -->
+
+
+    <!--This is the social share Codes Start -->
+   <div class="row">
+    <div class="col-sm-12 hidden-xs" style="background-color:#e6e6e6;">
+    <center>
+    <!-- Go to www.addthis.com/dashboard to customize your tools --> <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-58d98c860321414c"></script> 
+    </center>
+    </div>
+    </div> 
+    <!-- This is the SocialShare Codes Ends -->
+
+</div>
+
+<br />
+
+<div class="container hidden-lg" style="background-color:#ebebeb;  margin-left: 10px; margin-right: 10px;">
+  <div class="row">
+    <!-- Stack the columns on mobile by making one full-width and the other half-width -->
+<div class="row">
+  <div class="col-xs-12 col-md-3"><p><img alt="" src="/assets/images/cs-new-products.png" style="width: 20px; height: 19px; float: left; margin-left: 10px; margin-right: 10px;" /><i class="fa fa-check" aria-hidden="true"></i>New Arrival Products. <a href="#">Explore</a></p></div>
+  
+</div>
+  </div>
+</div>
+
+<div class="container hidden-lg" style="background-color:#ebebeb;  margin-left: 10px; margin-right: 10px;">
+  <div class="row">
+    <!-- Stack the columns on mobile by making one full-width and the other half-width -->
+<div class="row">
+  <div class="col-xs-12 col-md-3"><p><img alt="" src="/assets/images/cs-popular-products.png" style="width: 20px; height: 19px; float: left; margin-left: 10px; margin-right: 10px;"/><i class="fa fa-check" aria-hidden="true"></i>Popular Products. <a href="#">Explore</a></p></div>
+  <!--<div class="col-xs-6 col-md-2"><p><img alt="" src="/assets/images/cs-new-products.png" style="width: 100px; height: 99px; float: left;" />Welcome to Chainsaw Spares Shipping Information. <a href="#">Explore</a></p></div>-->
+  <!--<div class="col-xs-6 col-md-2"><p><img alt="" src="/assets/images/cs-new-products.png" style="width: 100px; height: 99px; float: left;" />Welcome to Chainsaw Spares Video Guide. <a href="#">Explore</a></p></div>-->
+</div>
+  </div>
+</div>
+
+<div class="container hidden-lg" style="background-color:#ebebeb;  margin-left: 10px; margin-right: 10px;">
+  <div class="row">
+    <!-- Stack the columns on mobile by making one full-width and the other half-width -->
+<div class="row">
+  <div class="col-xs-12 col-md-3"><p><img alt="" src="/assets/images/cs-featured-products.png" style="width: 20px; height: 19px; float: left; margin-left: 10px; margin-right: 10px;" /><i class="fa fa-check" aria-hidden="true"></i>Featured Products. <a href="#">Explore</a></p></div>
+  <!--<div class="col-xs-6 col-md-2"><p><img alt="" src="/assets/images/cs-new-products.png" style="width: 100px; height: 99px; float: left;" />Welcome to Chainsaw Spares Shipping Information. <a href="#">Explore</a></p></div>-->
+  <!--<div class="col-xs-6 col-md-2"><p><img alt="" src="/assets/images/cs-new-products.png" style="width: 100px; height: 99px; float: left;" />Welcome to Chainsaw Spares Video Guide. <a href="#">Explore</a></p></div>-->
+</div>
+  </div>
+</div>
+
+<div class="container hidden-lg" style="background-color:#ebebeb; margin-left: 10px; margin-right: 10px;">
+  <div class="row">
+    <!-- Stack the columns on mobile by making one full-width and the other half-width -->
+<div class="row">
+  <div class="col-xs-12 col-md-3"><p><img alt="" src="/assets/images/cs-ads.png" style="width: 20px; height: 19px; float: left; margin-left: 10px; margin-right: 10px;" /><i class="fa fa-check" aria-hidden="true"></i>Latest Advertisement. <a href="#">Explore</a></p></div>
+  <!--<div class="col-xs-6 col-md-2"><p><img alt="" src="/assets/images/cs-new-products.png" style="width: 100px; height: 99px; float: left;" />Welcome to Chainsaw Spares Shipping Information. <a href="#">Explore</a></p></div>-->
+  <!--<div class="col-xs-6 col-md-2"><p><img alt="" src="/assets/images/cs-new-products.png" style="width: 100px; height: 99px; float: left;" />Welcome to Chainsaw Spares Video Guide. <a href="#">Explore</a></p></div>-->
+</div>
+  </div>
+</div>
+
+<div class="container hidden-lg" style="background-color:#ebebeb; margin-left: 10px; margin-right: 10px;">
+  <div class="row">
+    <!-- Stack the columns on mobile by making one full-width and the other half-width -->
+<div class="row">
+<div class="col-xs-12 col-md-2"><p><img alt="" src="/assets/images/cs-shipping.jpg" style="width: 20px; height: 19px; float: left; margin-left: 10px; margin-right: 10px;" /><i class="fa fa-check" aria-hidden="true"></i>Shipping Information. <a href="#">Explore</a></p></div>
+  <!--<div class="col-xs-6 col-md-2"><p><img alt="" src="/assets/images/cs-new-products.png" style="width: 100px; height: 99px; float: left;" />Welcome to Chainsaw Spares Video Guide. <a href="#">Explore</a></p></div>-->
+</div>
+  </div>
+</div>
+
+<div class="container hidden-lg" style="background-color:#ebebeb; margin-left: 10px; margin-right: 10px;">
+  <div class="row">
+    <!-- Stack the columns on mobile by making one full-width and the other half-width -->
+<div class="row">
+<div class="col-xs-12 col-md-2"><p><img alt="" src="/assets/images/cs-video1.png" style="width: 20px; height: 19px; float: left; margin-left: 10px; margin-right: 10px;" /><i class="fa fa-check" aria-hidden="true"></i>Video Guides. <a href="#">Explore</a></p></div>
+</div>
+</div>
+</div> 
